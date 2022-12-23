@@ -10,16 +10,23 @@
 </head>
 <body>
 
+<!--  
+ <div align="center">
+<input type="text">
+<button>Submit</button>
+</div>
+-->
 <h2>Feedback Portal</h2>
 
+
+<form id="myForm" method="post" action="SubForm()">
 <div class="card">
-<form id="myForm" method="post">
   <img src="coverimage.jpeg" alt="Cakes&Gifts" style="width:100%;filter:blur(4px);-webkit-filter: blur(4px); ">
   <h1>Survey Time..!</h1>
   <p class="title"><label for="messages">Provide your Feedbacks/Suggestions...</label></p>
-  <textarea id="messages" name="messages" required="yes"></textarea> 
-</form>
-  <p><button onclick="SubForm()">Send</button></p>
+  <textarea id="messages" required></textarea> 
+
+  <p><button type="submit">Send</button></p>
   <p><button class="btn1" onClick="cleartxt()">Clear</button></p>
   <script type="text/javascript">
 	function cleartxt(){
@@ -29,6 +36,6 @@
   
 </div>
 <br>
-  
+ </form>
 </body>
 </html>
