@@ -16,14 +16,14 @@
 <form id="myForm" method="post">
   <img src="coverimage.jpeg" alt="Cakes&Gifts" style="width:100%;filter:blur(4px);-webkit-filter: blur(4px); ">
   <h1>Survey Time..!</h1>
-  <p class="title"><label for="message">Provide your Feedbacks/Suggestions...</label></p>
-  <textarea id="message" name="message" required></textarea> 
+  <p class="title"><label for="messages">Provide your Feedbacks/Suggestions...</label></p>
+  <textarea id="messages" name="messages" required></textarea> 
 </form>
   <p><button onclick="SubForm()">Send</button></p>
   <p><button class="btn1" onClick="cleartxt()">Clear</button></p>
   <script type="text/javascript">
 	function cleartxt(){
-		 document.getElementById("message").value = ""
+		 document.getElementById("messages").value = ""
 	}
 </script>
   
