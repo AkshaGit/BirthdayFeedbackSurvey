@@ -4,11 +4,13 @@ function SubForm(){
           type:'post',
           data:$("#myForm").serializeArray(),
           success: function(){
-          alert("Form Data Submitted &#128522;")
+		  var st = String.fromCodePoint(0x1F60A);
+          alert("Form Data Submitted" + st)
           },
           error: function(){
-          alert("There was <an> </an> error :(")
+		  var sti = String.fromCodePoint(0x1F615);
+          alert("There was <an> </an> error :(" + sti)
           }
         });
-	document.getElementById("message").value = "";
+	document.getElementById("messages").value = "";
 }
