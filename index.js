@@ -4,7 +4,7 @@ function SubForm(){
           type:'post',
           data:$("#myForm").serializeArray(),
           success: function(){
-          alert("Form Data Submitted :)")
+          alert("Form Data Submitted &#128522;")
           },
           error: function(){
           alert("There was <an> </an> error :(")
